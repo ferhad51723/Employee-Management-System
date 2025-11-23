@@ -1,8 +1,8 @@
 public abstract class Person
 {
     public int Id { get; private set; }
+    private string _Name = "N/A";
 
-    private string _Name = "";
     public string Name
     {
         get { return _Name; }
@@ -14,7 +14,7 @@ public abstract class Person
             }
             if (value.Length < 3 || value.Length > 25)
             {
-                throw new NameLengthException("Ad minimum 3, maksimum 25 simvol olmalıdır!");
+                throw new NameLengthException("Ad 3-25 simvol arası olmalıdır!");
             }
             _Name = value;
         }
