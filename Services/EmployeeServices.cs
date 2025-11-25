@@ -51,7 +51,6 @@ public class EmployeeService
     
     public void SortEmployeesByName()
     {
-        // LINQ ilə sıralama
         var sortedList = _employees.OrderBy(e => e.Name).ToList();
         
         Console.WriteLine("\n--- Adına Görə Sıralanmış İşçilər ---");
