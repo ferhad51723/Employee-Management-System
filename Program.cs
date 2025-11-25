@@ -13,7 +13,6 @@ public class Program
             Console.WriteLine("\n*** İşçi İdarəetmə Sistemi (OOP Beginner) ***");
             Console.WriteLine("1. Add Employee");
             Console.WriteLine("2. Remove Employee");
-            // ... Digər menyu variantları ...
             Console.WriteLine("5. List Employees");
             Console.WriteLine("6. Sort Employees (by Name)");
             Console.WriteLine("0. Exit");
@@ -29,7 +28,6 @@ public class Program
                         Console.Write("ID avtomatik verilir. Ad: ");
                         string name = Console.ReadLine();
                         Console.Write("Maaş (decimal, boş buraxınsa N/A): ");
-                        // Sadəlik üçün TryParse
                         decimal? salary = decimal.TryParse(Console.ReadLine(), out decimal s) ? s : (decimal?)null;
                         Console.Write("Department: ");
                         string dept = Console.ReadLine();
