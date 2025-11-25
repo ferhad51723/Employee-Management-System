@@ -10,7 +10,6 @@ public class Program
 
         while (running)
         {
-            Console.WriteLine("\n*** İşçi İdarəetmə Sistemi (OOP Beginner) ***");
             Console.WriteLine("1. Add Employee");
             Console.WriteLine("2. Remove Employee");
             Console.WriteLine("5. List Employees");
@@ -66,7 +65,6 @@ public class Program
             }
             catch (Exception ex) when (ex is NameEmptyException || ex is InvalidSalaryException || ex is InvalidWorkInfoException || ex is EmployeeNotFoundException || ex is DuplicateEmployeeException)
             {
-                Console.WriteLine($"\n--- XƏTA: {ex.GetType().Name} ---");
                 Console.WriteLine(ex.Message);
             }
             catch (Exception ex)
